@@ -90,6 +90,7 @@ namespace Business
         public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             ConfigureServices(services);
+            services.AddTransient<IPostRepository, PostRepository>();
             services.AddTransient<IInformationRepository, InformationRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IAssociationMemberRepository, AssociationMemberRepository>();
@@ -117,6 +118,7 @@ namespace Business
         public void ConfigureStagingServices(IServiceCollection services)
         {
             ConfigureServices(services);
+            services.AddTransient<IPostRepository, PostRepository>();
             services.AddTransient<IInformationRepository, InformationRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IAssociationMemberRepository, AssociationMemberRepository>();
@@ -143,6 +145,7 @@ namespace Business
         public void ConfigureProductionServices(IServiceCollection services)
         {
             ConfigureServices(services);
+            services.AddTransient<IPostRepository, PostRepository>();
             services.AddTransient<IInformationRepository, InformationRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IAssociationMemberRepository, AssociationMemberRepository>();

@@ -1,7 +1,7 @@
 {
-  "Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Business",
-  "Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core",
-  "DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\DataAccess",
-  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities",
-  "WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\WebAPI"
+  "Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Business",
+  "Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core",
+  "DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\DataAccess",
+  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities",
+  "WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\WebAPI"
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations.Ms
 {
     [DbContext(typeof(MsDbContext))]
-    [Migration("20230423174643_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20230423192353_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1265,6 +1265,144 @@ namespace DataAccess.Migrations.Ms
                     b.ToTable("UserGroups");
                 });
 
+            modelBuilder.Entity("Entities.Concrete.AssociationMember", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CompanyName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Logo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("WebSite")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AssociationMembers");
+                });
+
+            modelBuilder.Entity("Entities.Concrete.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(121),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(132),
+                            Name = "Başkandan Yazılar",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(133),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(134),
+                            Name = "Genel Sekreterden Yazılar",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(135),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(136),
+                            Name = "TV Programı ve Röportajlar",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(137),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(138),
+                            Name = "Etkinlikler",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(139),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(140),
+                            Name = "Genç İnder",
+                            Status = true
+                        });
+                });
+
+            modelBuilder.Entity("Entities.Concrete.Information", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Priority")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Informations");
+                });
+
             modelBuilder.Entity("Entities.Concrete.Post", b =>
                 {
                     b.Property<int>("Id")
@@ -1272,6 +1410,9 @@ namespace DataAccess.Migrations.Ms
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");

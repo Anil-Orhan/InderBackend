@@ -10390,11 +10390,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\anilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\obj\\",
+      "outputPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "K:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"

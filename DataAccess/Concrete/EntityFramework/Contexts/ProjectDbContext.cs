@@ -1,4 +1,4 @@
-﻿using Core.Entities.Concrete;
+using Core.Entities.Concrete;
 using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -55,6 +55,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<AssociationMember> AssociationMembers { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Information> Informations { get; set; }
+       
 
         protected IConfiguration Configuration { get; }
 

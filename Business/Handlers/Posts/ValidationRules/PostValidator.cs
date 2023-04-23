@@ -13,6 +13,8 @@ namespace Business.Handlers.Posts.ValidationRules
             RuleFor(x => x.Text).NotEmpty();
             RuleFor(x => x.Description).NotEmpty();
             RuleFor(x => x.Image).NotEmpty();
+            RuleFor(x => x.CategoryId).NotEmpty();
+           
 
         }
     }
@@ -24,6 +26,10 @@ namespace Business.Handlers.Posts.ValidationRules
             RuleFor(x => x.Text).NotEmpty();
             RuleFor(x => x.Description).NotEmpty();
             RuleFor(x => x.Image).NotEmpty();
+            RuleFor(x => x.CategoryId).NotEmpty();
+            RuleFor(x => x.CreateDate).NotEmpty();
+            RuleFor(x => x.ModifiedDate).NotEmpty();
+            RuleFor(x => x.Status).NotEmpty();
 
         }
     }

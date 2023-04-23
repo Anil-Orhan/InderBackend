@@ -20,7 +20,7 @@ using System.Linq;
 using FluentAssertions;
 
 
-namespace Tests.Business.Handlers
+namespace Tests.Business.HandlersTest
 {
     [TestFixture]
     public class PostHandlerTests

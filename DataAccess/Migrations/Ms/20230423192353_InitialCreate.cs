@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccess.Migrations.Ms
 {
     /// <inheritdoc />
-    public partial class InitialCreate6 : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -246,11 +246,11 @@ namespace DataAccess.Migrations.Ms
                 columns: new[] { "Id", "CreateDate", "ModifiedDate", "Name", "Status" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4280), new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4291), "Başkandan Yazılar", true },
-                    { 2, new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4293), new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4293), "Genel Sekreterden Yazılar", true },
-                    { 3, new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4295), new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4296), "TV Programı ve Röportajlar", true },
-                    { 4, new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4297), new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4298), "Etkinlikler", true },
-                    { 5, new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4299), new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4300), "Genç İnder", true }
+                    { 1, new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(121), new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(132), "Başkandan Yazılar", true },
+                    { 2, new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(133), new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(134), "Genel Sekreterden Yazılar", true },
+                    { 3, new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(135), new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(136), "TV Programı ve Röportajlar", true },
+                    { 4, new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(137), new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(138), "Etkinlikler", true },
+                    { 5, new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(139), new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(140), "Genç İnder", true }
                 });
 
             migrationBuilder.InsertData(

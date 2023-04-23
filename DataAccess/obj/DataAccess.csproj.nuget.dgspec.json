@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anilo\\source\\repos\\InderWebProject\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj": {
+    "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\anilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\obj\\",
+        "outputPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "K:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -192,14 +192,14 @@
         }
       }
     },
-    "C:\\Users\\anilo\\source\\repos\\InderWebProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\anilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "K:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -221,11 +221,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj"
+              "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj"
               },
-              "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities\\Entities.csproj"
+              "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities\\Entities.csproj"
               }
             }
           }
@@ -293,14 +293,14 @@
         }
       }
     },
-    "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\anilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "K:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -322,8 +322,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\Core\\Core.csproj"
+              "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\Core\\Core.csproj"
               }
             }
           }

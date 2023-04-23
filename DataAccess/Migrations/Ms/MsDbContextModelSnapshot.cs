@@ -1324,40 +1324,40 @@ namespace DataAccess.Migrations.Ms
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4280),
-                            ModifiedDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4291),
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(121),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(132),
                             Name = "Başkandan Yazılar",
                             Status = true
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4293),
-                            ModifiedDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4293),
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(133),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(134),
                             Name = "Genel Sekreterden Yazılar",
                             Status = true
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4295),
-                            ModifiedDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4296),
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(135),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(136),
                             Name = "TV Programı ve Röportajlar",
                             Status = true
                         },
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4297),
-                            ModifiedDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4298),
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(137),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(138),
                             Name = "Etkinlikler",
                             Status = true
                         },
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4299),
-                            ModifiedDate = new DateTime(2023, 4, 23, 22, 14, 11, 63, DateTimeKind.Local).AddTicks(4300),
+                            CreateDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(139),
+                            ModifiedDate = new DateTime(2023, 4, 23, 22, 23, 52, 955, DateTimeKind.Local).AddTicks(140),
                             Name = "Genç İnder",
                             Status = true
                         });

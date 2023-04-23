@@ -26,6 +26,10 @@ namespace Business.Handlers.Posts.Commands
         public string Text { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
+        public int CategoryId { get; set; }
+        public System.DateTime CreateDate { get; set; }
+        public System.DateTime ModifiedDate { get; set; }
+        public bool Status { get; set; }
 
         public class UpdatePostCommandHandler : IRequestHandler<UpdatePostCommand, IResult>
         {
@@ -51,6 +55,10 @@ namespace Business.Handlers.Posts.Commands
                 isTherePostRecord.Text = request.Text;
                 isTherePostRecord.Description = request.Description;
                 isTherePostRecord.Image = request.Image;
+                isTherePostRecord.CategoryId = request.CategoryId;
+                isTherePostRecord.CreateDate = request.CreateDate;
+                isTherePostRecord.ModifiedDate = request.ModifiedDate;
+                isTherePostRecord.Status = request.Status;
 
 
                 _postRepository.Update(isTherePostRecord);

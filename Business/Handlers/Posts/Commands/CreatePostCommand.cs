@@ -13,6 +13,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
 using Business.Handlers.Posts.ValidationRules;
+using System;
 
 namespace Business.Handlers.Posts.Commands
 {
@@ -26,6 +27,8 @@ namespace Business.Handlers.Posts.Commands
         public string Text { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
+        public int CategoryId { get; set; }
+        
 
 
         public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand, IResult>
@@ -55,6 +58,10 @@ namespace Business.Handlers.Posts.Commands
                     Text = request.Text,
                     Description = request.Description,
                     Image = request.Image,
+                    CategoryId = request.CategoryId,
+                    CreateDate =DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    Status = true,
 
                 };
 

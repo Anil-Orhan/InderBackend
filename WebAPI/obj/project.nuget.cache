@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WGuWVbFHh4I3ZeTEKUQdTIUzlM1SATzdAykyFGYQ4E3m2HxgO/dNpjJOEZ48PGpjy2BkI2AEKQu3Lgx1BUCT2g==",
+  "dgSpecHash": "kX5j+Tu9i3Yf0yB3ViTXtqaZb3O/5pDEAQ7krGxI4tw3NvbPFZTbsPBwrVmffmbXSCzo2yywkUKgKzsS5+x1Xg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anilo\\source\\repos\\InderWebProject\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\anilo\\Documents\\GitHub\\InderBackend\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anilo\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\anilo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
