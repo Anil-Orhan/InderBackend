@@ -9,7 +9,7 @@ using DataAccess.Abstract;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-
+using System;
 
 namespace Business.Handlers.Posts.Commands
 {
@@ -37,8 +37,9 @@ namespace Business.Handlers.Posts.Commands
             public async Task<IResult> Handle(DeletePostCommand request, CancellationToken cancellationToken)
             {
                 var postToDelete = _postRepository.Get(p => p.Id == request.Id);
-
-                _postRepository.Delete(postToDelete);
+                postToDelete.Status = false;
+                postToDelete.ModifiedDate = DateTime.Now;
+                _postRepository.Update(postToDelete);
                 await _postRepository.SaveChangesAsync();
                 return new SuccessResult(Messages.Deleted);
             }

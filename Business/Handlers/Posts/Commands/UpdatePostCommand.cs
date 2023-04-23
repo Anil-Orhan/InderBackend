@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using Core.Aspects.Autofac.Validation;
 using Business.Handlers.Posts.ValidationRules;
-
+using System;
 
 namespace Business.Handlers.Posts.Commands
 {
@@ -27,8 +27,6 @@ namespace Business.Handlers.Posts.Commands
         public string Description { get; set; }
         public string Image { get; set; }
         public int CategoryId { get; set; }
-        public System.DateTime CreateDate { get; set; }
-        public System.DateTime ModifiedDate { get; set; }
         public bool Status { get; set; }
 
         public class UpdatePostCommandHandler : IRequestHandler<UpdatePostCommand, IResult>
@@ -56,8 +54,7 @@ namespace Business.Handlers.Posts.Commands
                 isTherePostRecord.Description = request.Description;
                 isTherePostRecord.Image = request.Image;
                 isTherePostRecord.CategoryId = request.CategoryId;
-                isTherePostRecord.CreateDate = request.CreateDate;
-                isTherePostRecord.ModifiedDate = request.ModifiedDate;
+                isTherePostRecord.ModifiedDate = DateTime.Now;
                 isTherePostRecord.Status = request.Status;
 
 
