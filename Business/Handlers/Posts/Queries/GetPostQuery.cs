@@ -30,7 +30,7 @@ namespace Business.Handlers.Posts.Queries
             [SecuredOperation(Priority = 1)]
             public async Task<IDataResult<Post>> Handle(GetPostQuery request, CancellationToken cancellationToken)
             {
-                var post = await _postRepository.GetAsync(p => p.Id == request.Id);
+                var post = await _postRepository.GetAsync(p => p.Id == request.Id && p.Status==true);
                 return new SuccessDataResult<Post>(post);
             }
         }

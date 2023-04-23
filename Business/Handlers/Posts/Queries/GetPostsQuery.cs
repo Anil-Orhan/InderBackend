@@ -34,7 +34,7 @@ namespace Business.Handlers.Posts.Queries
             [SecuredOperation(Priority = 1)]
             public async Task<IDataResult<IEnumerable<Post>>> Handle(GetPostsQuery request, CancellationToken cancellationToken)
             {
-                return new SuccessDataResult<IEnumerable<Post>>(await _postRepository.GetListAsync());
+                return new SuccessDataResult<IEnumerable<Post>>(await _postRepository.GetListAsync(p=>p.Status==true));
             }
         }
     }
